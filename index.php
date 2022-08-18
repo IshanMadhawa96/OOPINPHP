@@ -1,36 +1,30 @@
 <?php
 
 class Student{
-  public  $names = 'Ishan';
-  public   $attandance = true;
-  public $totalMarks = 89;
+  public  $names ;
+  public   $attandance ;
+  public $totalMarks ;
 
-
+  public function studentDetails($names,$attandance,$totalMarks){
+      $this->names = $names;
+      $this->attandance = $attandance;
+      $this->totalMarks = $totalMarks;
+  }
 }
 
-// instance
+//instanse of the student
+$student = new Student();
+$student->studentDetails("Ishan",false,100);
+
 echo'<br>';
 echo'<br>';
 echo 'Student 1';
 echo'<br>';
 echo'<br>';
-$student = new Student();
 echo $student->names;
 echo'<br>';
 echo $student->attandance;
 echo'<br>';
-echo $student->totalMarks=100;
-// reusable single class in diffrent student
-echo'<br>';
-echo'<br>';
-echo 'Student 2';
-echo'<br>';
-echo'<br>';
+echo $student->totalMarks;
 
-$student = new Student();
-echo $student->names = "Dane";
-echo'<br>';
-echo $student->attandance;
-echo'<br>';
-echo $student->totalMarks=50;
 ?>
