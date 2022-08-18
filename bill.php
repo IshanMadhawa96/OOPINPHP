@@ -1,0 +1,26 @@
+<?php
+
+class Bill{
+    public $diner=20;
+    public $desserts=5;
+    public $coolDrink=3;
+    public $bill;
+
+    public function dinner($person){
+        $this->bill += $this->diner * $person;
+        return $this;
+    }
+
+    public function dessert($person){
+        $this->bill += $this->desserts * $person;
+        return $this;
+    }
+
+    public function drink($person){
+        $this->bill += $this->coolDrink * $person;
+        return $this;
+    }
+}
+
+$bill = new Bill();
+echo $bill->dinner(2)->dessert(2)->drink(1)->bill;
