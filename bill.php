@@ -25,7 +25,12 @@ class Bill{
         $this->bill += $this->coolDrink * $person;
         return $this;
     }
+    // oposite of the construcer this function load when we have ervry thing else
+    public function __destruct(){ 
+        echo $this->bill ;
+    }
 }
 
 $bill = new Bill();
-echo $bill->dinner(2)->dessert(2)->drink(1)->bill;
+//echo $bill->dinner(2)->dessert(2)->drink(1)->bill;
+$bill->dinner(2)->dessert(2)->drink(1)->bill;
