@@ -6,6 +6,11 @@ class Bill{
     public $coolDrink=3;
     public $bill;
 
+    // constructer EVERY TIME WE CALLED OBJECT INSTANCE CONSTRUCTER CALLED AUTO MATICALLY
+    public function __construct(){ 
+        $this->bill = 3;
+    }
+
     public function dinner($person){
         $this->bill += $this->diner * $person;
         return $this;
