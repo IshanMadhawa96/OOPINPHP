@@ -25,7 +25,7 @@
 // echo $book->getAuthor();
 
 
-// broblum with late binding,runtime binding
+// problem with late binding,runtime binding
 class Book{
     public static $name = "Ishan";
     public static function author(){
@@ -37,7 +37,7 @@ class Book{
 }
  class NewBook extends Book{
     public static function author(){
-        return "The authors name are:".self::$name." and Madhawa";
+        return "The authors name are:".self::$name. " and Madhawa";
     }
  }
  //not getting expected result reson for that no object and sataic property
