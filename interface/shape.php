@@ -1,6 +1,6 @@
 <?php
- include './shapeinterface.php';
- include './geometryInterface.php';
+ include './autoload.php';
+ //include './geometryInterface.php';
 //implement more interfaces
 class Traingle implements ShapeInterface,geometryInterface{
    // overiding interface methods
