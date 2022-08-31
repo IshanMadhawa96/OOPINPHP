@@ -1,9 +1,9 @@
 <?php
 
-
-class Book{
+//final key word is used to restric overiding or inhertance in class or method
+final class Book{
     public static $name = "Ishan";
-    public static function author(){
+    final public static function author(){
         return "The author name is:".self::$name;
     }
     public static function getAuthor(){//depends upon object
