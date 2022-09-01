@@ -4,6 +4,6 @@ trait Projecter{
         echo 'range 2m';
     }
     public function power(){
-        echo '5mW';
+        echo 'projector power 5mW';
     }
 }
