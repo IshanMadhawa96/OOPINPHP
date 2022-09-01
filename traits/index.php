@@ -10,11 +10,15 @@ class Galaxy extends Mobile{
     public function power(){
         echo "I am from Index";
     }
+    public function abc(){
+
+    }
 }
 $obj = new Galaxy;
 
-$obj->power();
+//$obj->power();
 // echo '<br>';
 // $obj->battery();
 // echo '<br>';
 // $obj->range();
+echo $obj->name;// use traits variable
